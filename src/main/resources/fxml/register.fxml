@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="553.0" prefWidth="819.0" style="-fx-background-color: #98d3d6;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aplicacioncitas.controller.RegisterController">
+   <children>
+      <ImageView fitHeight="100.0" fitWidth="195.0" layoutX="-41.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/TecmiDoc.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="307.0" layoutY="28.0" text="Formulario de Registro Medico" textFill="#3d5456">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombre" layoutX="250.0" layoutY="107.0" style="-fx-background-color: #cce9eb;" />
+      <TextField fx:id="txtApellidoPat" layoutX="250.0" layoutY="167.0" style="-fx-background-color: #cce9eb;" />
+      <TextField fx:id="txtApellidoMat" layoutX="250.0" layoutY="221.0" style="-fx-background-color: #cce9eb;" />
+      <TextField fx:id="txtEdad" layoutX="250.0" layoutY="280.0" style="-fx-background-color: #cce9eb;" />
+      <Label layoutX="164.0" layoutY="111.0" text="Nombre(s)" />
+      <Label layoutX="150.0" layoutY="171.0" text="Apellido Paterno" />
+      <Label layoutX="150.0" layoutY="225.0" text="Apellido Materno" />
+      <Label layoutX="180.0" layoutY="283.0" text="Edad" />
+      <Label layoutX="181.0" layoutY="339.0" text="Peso" />
+      <TextField fx:id="txtAltura" layoutX="527.0" layoutY="107.0" style="-fx-background-color: #cce9eb;" />
+      <Label layoutX="480.0" layoutY="111.0" text="Altura" />
+      <Label layoutX="482.0" layoutY="171.0" text="Sexo" />
+      <Label layoutX="473.0" layoutY="225.0" text="Telefono" />
+      <Label layoutX="422.0" layoutY="283.0" text="Correo Electronico" />
+      <TextField fx:id="txtTelefono" layoutX="527.0" layoutY="221.0" style="-fx-background-color: #cce9eb;" />
+      <TextField fx:id="txtEmail" layoutX="527.0" layoutY="280.0" style="-fx-background-color: #cce9eb;" />
+      <PasswordField fx:id="txtContrasena" layoutX="526.0" layoutY="336.0" style="-fx-background-color: #cce9eb;" />
+      <Label layoutX="460.0" layoutY="341.0" text="Contraseña" />
+      <Label layoutX="48.0" layoutY="467.0" prefHeight="26.0" prefWidth="147.0" text="Cargar Expediente Médico" />
+      <Button fx:id="btnRegistrar" layoutX="535.0" layoutY="454.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: #89bec1;" text="Registrar" onAction="#onRegister"/>
+      <Button fx:id="btnBuscarExpediente" layoutX="207.0" layoutY="468.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #cce9eb;" text="Buscar (En tu PC)" underline="true" onAction="#seleccionarExpediente" />
+      <Button fx:id="btnCerrar" layoutX="676.0" layoutY="504.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: #89bec1;" text="Cerrar" onAction="#cerrarVentana"/>
+       <RadioButton fx:id="femenino" layoutX="545.0" layoutY="170.0" text="F">
+         <toggleGroup>
+            <ToggleGroup fx:id="sexoGroup" />
+         </toggleGroup></RadioButton>
+       <RadioButton fx:id="masculino" layoutX="620.0" layoutY="170.0" text="M" toggleGroup="$sexoGroup" />
+       <TextField fx:id="txtPeso" layoutX="250.0" layoutY="337.0" style="-fx-background-color: #cce9eb;" />
+      <Button fx:id="btnInicioSesion" layoutX="719.0" layoutY="16.0" mnemonicParsing="false" style="-fx-background-color: #89bec1;" text="Iniciar Sesion" onAction="#abrirLogin"/>
+      <Button fx:id="btnLimpiar" layoutX="671.0" layoutY="455.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="127.0" style="-fx-background-color: #89bec1;" text="limpiar" onAction="#limpiarCampos" />
+   </children>
+</AnchorPane>

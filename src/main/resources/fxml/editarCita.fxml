@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #98d3d6;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aplicacioncitas.controller.EditarCitaController">
+   <children>
+      <DatePicker fx:id="dateFechaCita" layoutX="272.0" layoutY="93.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #cce9eb;" />
+      <TextField fx:id="txtHora" layoutX="272.0" layoutY="148.0" style="-fx-background-color: #cce9eb;" />
+      <TextField fx:id="txtMonto" layoutX="272.0" layoutY="205.0" style="-fx-background-color: #cce9eb;" />
+      <TextField fx:id="txtMotivo" layoutX="272.0" layoutY="260.0" style="-fx-background-color: #cce9eb;" />
+      <Button fx:id="btnCancelar" layoutX="198.0" layoutY="319.0" mnemonicParsing="false" onAction="#cancelar" style="-fx-background-color: #cce9eb;" text="Cancelar" />
+      <Button fx:id="btnGuardar" layoutX="385.0" layoutY="319.0" mnemonicParsing="false" onAction="#guardarCambios" style="-fx-background-color: #cce9eb;" text="Guardar" />
+      <Label layoutX="191.0" layoutY="97.0" text="Fecha Cita" />
+      <Label layoutX="205.0" layoutY="152.0" text="Hora" />
+      <Label layoutX="204.0" layoutY="209.0" text="Monto" />
+      <Label layoutX="204.0" layoutY="264.0" text="Motivo" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/TecmiDoc.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="272.0" layoutY="35.0" text="¡Modifica tu cita!">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

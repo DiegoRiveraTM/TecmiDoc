@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="461.0" prefWidth="668.0" style="-fx-background-color: #98d3d6;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aplicacioncitas.controller.PantallaPrincipalController">
+   <children>
+      <ImageView fitHeight="117.0" fitWidth="165.0" layoutX="-51.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/TecmiDoc.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAgendarCita" layoutX="572.0" layoutY="237.0" mnemonicParsing="false" onAction="#onCrearCita" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #cce9eb;" text="Agendar Cita">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+       <ScrollPane fx:id="scrollCitas" fitToWidth="true" layoutX="65.0" layoutY="14.0" prefHeight="432.0" prefWidth="487.0" styleClass="custom-scroll">
+           <content>
+               <VBox fx:id="contenidoCitas" prefHeight="142.0" prefWidth="414.0" spacing="10" />
+           </content>
+       </ScrollPane>
+      <Button fx:id="btnCerrar" layoutX="606.0" layoutY="28.0" mnemonicParsing="false" onAction="#cerrarVentana" style="-fx-background-color: #69b5d1;" text="Cerrar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

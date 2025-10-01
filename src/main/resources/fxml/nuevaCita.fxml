@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="407.0" prefWidth="597.0" style="-fx-background-color: #98d3d6;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aplicacioncitas.controller.CrearCitaController">
+   <children>
+      <DatePicker fx:id="dateFechaCita" layoutX="169.0" layoutY="140.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #cce9eb;" />
+      <TextField fx:id="txtMonto" layoutX="434.0" layoutY="140.0" style="-fx-background-color: #cce9eb;" />
+      <TextField fx:id="txtMotivo" layoutX="168.0" layoutY="270.0" style="-fx-background-color: #cce9eb;" />
+      <ComboBox fx:id="comboDoctor" layoutX="168.0" layoutY="79.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #cce9eb;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-55.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/TecmiDoc.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="86.0" layoutY="83.0" text="Doctor" />
+      <Label layoutX="63.0" layoutY="144.0" text="Fecha de la cita" />
+      <Label layoutX="342.0" layoutY="144.0" text="Monto de la cita" />
+      <Label layoutX="85.0" layoutY="274.0" text="Motivo" />
+      <Button fx:id="btnAgendar" layoutX="441.0" layoutY="191.0" mnemonicParsing="false" onAction="#agendarCita" style="-fx-background-color: #cce9eb;" text="Agendar Cita" />
+      <Button fx:id="btnLimpiar" layoutX="426.0" layoutY="243.0" mnemonicParsing="false" onAction="#limpiarFormulario" style="-fx-background-color: #cce9eb;" text="Limpiar Formulario" />
+      <Button fx:id="btnRegresar" layoutX="523.0" layoutY="22.0" mnemonicParsing="false" onAction="#cerrarVentana" style="-fx-background-color: #cce9eb;" text="Regresar" />
+      <Label layoutX="89.0" layoutY="24.0" text="¡Agenda tu cita!">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="354.0" layoutY="83.0" text="Consultorio" />
+      <ComboBox fx:id="comboConsultorio" layoutX="426.0" layoutY="79.0" prefWidth="150.0" style="-fx-background-color: #cce9eb;" />
+      <TextField fx:id="txtHora" layoutX="167.0" layoutY="204.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #cce9eb;" />
+      <Label layoutX="66.0" layoutY="208.0" text="Hora de la cita" />
+   </children>
+</AnchorPane>

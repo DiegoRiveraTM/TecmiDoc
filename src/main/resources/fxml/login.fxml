@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #98d3d6;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aplicacioncitas.controller.LoginController">
+   <children>
+      <ImageView fitHeight="381.0" fitWidth="605.0" layoutX="-128.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/TecmiDoc.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="475.0" layoutY="72.0" text="Formulario" textFill="#3d5456">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="154.0" text="Correo Electronico" />
+      <Label layoutX="339.0" layoutY="273.0" text="Contraseña" />
+      <Button fx:id="btnEntrar" layoutX="460.0" layoutY="392.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: #89bec1;" text="Entrar" onAction="#onLogin" />
+      <Button fx:id="btnCerrar" layoutX="459.0" layoutY="443.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: #89bec1;" text="Cerrar" onAction="#cerrarVentana"/>
+      <Label layoutX="378.0" layoutY="348.0" text="¿Aún no tienes cuenta?" />
+      <Hyperlink fx:id="linkRegistro" layoutX="545.0" layoutY="345.0" text="registrate aqui" textFill="#283c3c" underline="true" onAction="#abrirRegistro">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Hyperlink>
+      <PasswordField fx:id="txtPassword" layoutX="424.0" layoutY="269.0" prefHeight="25.0" prefWidth="215.0" style="-fx-background-color: #cce9eb;" />
+      <TextField fx:id="txtCorreo" layoutX="428.0" layoutY="151.0" prefHeight="25.0" prefWidth="212.0" style="-fx-background-color: #cce9eb;" />
+   </children> 
+</AnchorPane>
